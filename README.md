@@ -1,7 +1,7 @@
 # Button styles
 
 - Approx. completion time: **1 hour**
-- Deliverables: **1 HTML file, 1 CSS file, images**
+- Deliverables: **1 HTML file, 1 CSS file**
 
 ---
 

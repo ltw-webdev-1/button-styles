@@ -30,7 +30,7 @@
 Visually match the images in the “screenshots” folder and create the interaction shown in the linked video.
 
 - [Final screenshots in the “screenshots” folder.](screenshots)
-- [**Watch this video to see how it interacts.**](https://youtu.be/)
+- [**Watch this video to see how it interacts.**](https://youtu.be/l0SGDDgRIII)
 
 ---
 

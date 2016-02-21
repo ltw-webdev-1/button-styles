@@ -22,6 +22,7 @@
 - *Button padding:* `0.4em 0.75em 0.3em`
 - *Button corner radius:* `8px`
 - *Button border width:* `3px`
+- *Expected class names:* `.btn`, `.btn-small`, `.btn-big`, `.btn-subtle`, `.btn-ghost`, `.btn-warning`
 
 ---
 

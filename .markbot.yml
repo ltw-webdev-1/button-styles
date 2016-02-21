@@ -25,11 +25,15 @@ css:
     bestPractices: true
     has:
       - ['.btn', 'display', 'inline-block']
+      - ['.btn:hover']
       - ['.btn-small', 'font-size']
       - ['.btn-big', 'font-size']
       - ['.btn-subtle']
+      - ['.btn-subtle:hover']
       - ['.btn-ghost']
+      - ['.btn-ghost:hover']
       - ['.btn-warning']
+      - ['.btn-warning:hover']
     has_not:
       - ['.btn-small', ['padding', 'display', 'background-color', 'border-radius', 'border', 'color', 'text-decoration']]
       - ['.btn-big', ['padding', 'display', 'background-color', 'border-radius', 'border', 'color', 'text-decoration']]

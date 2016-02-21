@@ -1,0 +1,42 @@
+repo: "button-styles"
+canvasCourse: "467502"
+canvasAssignment: "4178299"
+
+naming: true
+commits: 3
+
+html:
+  - path: "index.html"
+    valid: true
+    bestPractices: true
+    has:
+      - "a.btn"
+    search:
+      - "Primary button"
+      - "Subtle button"
+      - "Ghost button"
+      - "Warning button"
+      - "button small"
+      - "button big"
+
+css:
+  - path: "css/main.css"
+    valid: true
+    bestPractices: true
+    has:
+      - ['.btn', 'display', 'inline-block']
+      - ['.btn-small', 'font-size']
+      - ['.btn-big', 'font-size']
+      - ['.btn-subtle']
+      - ['.btn-ghost']
+      - ['.btn-warning']
+    has_not:
+      - ['.btn-small', ['padding', 'display', 'background-color', 'border-radius', 'border', 'color', 'text-decoration']]
+      - ['.btn-big', ['padding', 'display', 'background-color', 'border-radius', 'border', 'color', 'text-decoration']]
+      - ['.btn-subtle', ['padding', 'display', 'border-radius', 'border', 'text-decoration']]
+      - ['.btn-ghost', ['padding', 'display', 'border-radius', 'border', 'text-decoration']]
+      - ['.btn-warning', ['padding', 'display', 'border-radius', 'border', 'text-decoration']]
+
+screenshots:
+  - path: "index.html"
+    sizes: [400]

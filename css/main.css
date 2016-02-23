@@ -7,7 +7,29 @@ html {
   box-sizing: inherit;
 }
 
-div {
+.btn {
   padding: .5rem;
   text-align: center;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.btn-small {
+  font-size: 0.875rem;
+}
+
+.btn-big {
+  font-size: 1.5rem;
+}
+
+.btn-subtle {
+  background-color: #ccc;
+}
+
+.btn-ghost {
+  background-color: #fff;
+  border: 3px solid #000;
+  color: #000;
 }

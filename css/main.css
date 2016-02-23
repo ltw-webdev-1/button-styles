@@ -8,12 +8,19 @@ html {
 }
 
 .btn {
+  display: inline-block;
   padding: .5rem;
   text-align: center;
   font-size: 1rem;
   color: white;
   text-decoration: none;
   border-radius: 8px;
+  background-color: #333;
+  margin: 3px;
+}
+
+.btn:hover {
+  background-color: #000;
 }
 
 .btn-small {
@@ -28,8 +35,26 @@ html {
   background-color: #ccc;
 }
 
+.btn-subtle:hover {
+  background-color: #666;
+}
+
 .btn-ghost {
   background-color: #fff;
   border: 3px solid #000;
   color: #000;
+}
+
+.btn-ghost:hover {
+  background-color: #666;
+  color: #fff;
+  border: none;
+}
+
+.btn-warning {
+  background-color: #f33;
+}
+
+.btn-warning:hover {
+  background-color: #933;
 }

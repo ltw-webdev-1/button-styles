@@ -22,7 +22,8 @@ html {
 
 .btn:hover {
   background-color: #000;
-  border: 3px solid #000;
+  border-color: #000;
+  border-width: 3px;
 }
 
 .btn-small {
@@ -35,33 +36,38 @@ html {
 
 .btn-subtle {
   background-color: #ccc;
-  border: 3px solid #ccc;
+  border-color: #ccc;
+  border-width: 3px;
 }
 
 .btn-subtle:hover {
   background-color: #666;
-  border: 3px solid #666;
+  border-color: #666;
+  border-width: 3px;
 }
 
 .btn-ghost {
   background-color: #fff;
   color: #000;
-  border: 3px solid #000;
+  border-color: #000;
+  border-width: 3px;
 }
 
 .btn-ghost:hover {
   background-color: #666;
   color: #fff;
-  border: none;
-  border: 3px solid #666;
+  border-color: #666;
+  border-width: 3px;
 }
 
 .btn-warning {
   background-color: #f33;
-  border: 3px solid #f33;
+  border-color: #f33;
+  border-width: 3px;
 }
 
 .btn-warning:hover {
   background-color: #933;
-  border: 3px solid #933;
+  border-color: #933;
+  border-width: 3px;
 }

@@ -17,7 +17,7 @@
 
 ## Details
 
-- *Text sizes:* `1rem`, `0.875rem`, `1.5rem`
+- *Text sizes:* `1.125rem`, `0.875rem`, `1.5rem`
 - *Colours:* `#fff`, `#000`, `#333`, `#666`, `#ccc`, `#f33`, `#933`
 - *Button padding:* `0.4em 0.75em 0.3em`
 - *Button corner radius:* `8px`

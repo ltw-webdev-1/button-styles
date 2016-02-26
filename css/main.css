@@ -9,14 +9,14 @@ html {
 
 .btn {
   display: inline-block;
-  padding: .5rem;
+  padding: .45em 1em .45em 1em;
   text-align: center;
   font-size: 1rem;
   color: white;
   text-decoration: none;
   border-radius: 8px;
   background-color: #333;
-  margin: 5px;
+  margin: 8px;
   border: 3px solid #333;
 }
 
@@ -70,4 +70,8 @@ html {
   background-color: #933;
   border-color: #933;
   border-width: 3px;
+}
+
+div {
+  text-align: center;
 }

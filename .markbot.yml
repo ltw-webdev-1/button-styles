@@ -1,9 +1,14 @@
 repo: "button-styles"
-canvasCourse: "467502"
-canvasAssignment: "4178299"
+canvasCourse: "web-dev-1"
 
 naming: true
-commits: 3
+restrictFileTypes: true
+liveWebsite: true
+
+git:
+  numCommits: 3
+  allCommitted: true
+  allSynced: true
 
 html:
   - path: "index.html"
@@ -25,6 +30,7 @@ css:
     bestPractices: true
     has:
       - ['html', 'box-sizing', 'border-box']
+      - ['*', 'box-sizing', 'inherit']
       - ['.btn', 'display', 'inline-block']
       - ['.btn:hover']
       - ['.btn-small', 'font-size']
@@ -45,3 +51,33 @@ css:
 screenshots:
   - path: "index.html"
     sizes: [400]
+
+functionality:
+  - path: 'index.html'
+    tests:
+      - |
+        let link = $('div:first-child a');
+        let oldBg = css(link).backgroundColor;
+
+        hover('div:first-child a', function () {
+          if (css(link).backgroundColor == oldBg) fail('The background colour of the first button doesn’t change when hovered')
+          pass();
+        });
+
+      - |
+        let link = $('div:nth-child(2) a');
+        let oldBg = css(link).backgroundColor;
+
+        hover('div:nth-child(2) a', function () {
+          if (css(link).backgroundColor == oldBg) fail('The background colour of the second button doesn’t change when hovered')
+          pass();
+        });
+
+      - |
+        let link = $('div:nth-child(3) a');
+        let oldBg = css(link).backgroundColor;
+
+        hover('div:nth-child(3) a', function () {
+          if (css(link).backgroundColor == oldBg) fail('The background colour of the third button doesn’t change when hovered')
+          pass();
+        });

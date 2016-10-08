@@ -1,11 +1,12 @@
-# Button styles
-
-- Approx. completion time: **1 hour**
-- Deliverables: **1 HTML file, 1 CSS file**
-
+---
+summary: "A CSS code exercise looking at using multiple classes to create consistent styles."
+time: "1 hour"
+deliverables: "1 HTML file, 1 CSS file"
 ---
 
-**A CSS code exercise looking at using multiple classes to create consistent styles.**
+# Button styles
+
+## Overview
 
 - *Fork this repository.*
 - The `index.html` and `main.css` files are started for you.
@@ -30,7 +31,7 @@
 
 Visually match the images in the “screenshots” folder and create the interaction shown in the linked video.
 
-- [Final screenshots in the “screenshots” folder.](screenshots)
+- Final screenshots in the “screenshots” folder.
 - [**Watch this video to see how it interacts.**](https://youtu.be/l0SGDDgRIII)
 
 ---

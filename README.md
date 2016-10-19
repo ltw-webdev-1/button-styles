@@ -18,9 +18,9 @@ deliverables: "1 HTML file, 1 CSS file"
 
 ## Details
 
-- *Text sizes:* `1.125rem`, `0.875rem`, `1.5rem`
+- *Text sizes:* `1.125rem`, `.875rem`, `1.5rem`
 - *Colours:* `#fff`, `#000`, `#333`, `#666`, `#ccc`, `#f33`, `#933`
-- *Button padding:* `0.4em 0.75em 0.3em`
+- *Button padding:* `.4em .75em .3em`
 - *Button corner radius:* `8px`
 - *Button border width:* `3px`
 - *Expected class names:* `.btn`, `.btn-small`, `.btn-big`, `.btn-subtle`, `.btn-ghost`, `.btn-warning`

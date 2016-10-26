@@ -44,9 +44,22 @@ css:
     has_not:
       - ['.btn-small', ['padding', 'display', 'background-color', 'border-radius', 'border', 'color', 'text-decoration']]
       - ['.btn-big', ['padding', 'display', 'background-color', 'border-radius', 'border', 'color', 'text-decoration']]
-      - ['.btn-subtle', ['padding', 'display', 'border-radius', 'border', 'text-decoration']]
-      - ['.btn-ghost', ['padding', 'display', 'border-radius', 'border', 'text-decoration']]
-      - ['.btn-warning', ['padding', 'display', 'border-radius', 'border', 'text-decoration']]
+      - ['.btn-subtle', ['padding', 'display', 'border-radius', 'border', 'text-decoration', 'font-size']]
+      - ['.btn-ghost', ['padding', 'display', 'border-radius', 'border', 'text-decoration', 'font-size']]
+      - ['.btn-warning', ['padding', 'display', 'border-radius', 'border', 'text-decoration', 'font-size']]
+    search_not:
+      - '\.btn-subtle-small'
+      - '\.btn-small-subtle'
+      - '\.btn-big-subtle'
+      - '\.btn-subtle-big'
+      - '\.btn-ghost-small'
+      - '\.btn-small-ghost'
+      - '\.btn-big-ghost'
+      - '\.btn-ghost-big'
+      - '\.btn-warning-small'
+      - '\.btn-small-warning'
+      - '\.btn-big-warning'
+      - '\.btn-warning-big'
 
 screenshots:
   - path: "index.html"

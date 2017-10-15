@@ -66,7 +66,7 @@ functionality:
         let oldBg = css(link).backgroundColor;
 
         hover(link, function () {
-          if (css(link).backgroundColor == oldBg) fail('The background colour of the first button doesn’t change when hovered')
+          if (css(link).backgroundColor == oldBg) return fail('The background colour of the first button doesn’t change when hovered')
           pass();
         });
 
@@ -75,7 +75,7 @@ functionality:
         let oldBg = css(link).backgroundColor;
 
         hover(link, function () {
-          if (css(link).backgroundColor == oldBg) fail('The background colour of the second button doesn’t change when hovered')
+          if (css(link).backgroundColor == oldBg) return fail('The background colour of the second button doesn’t change when hovered')
           pass();
         });
 
@@ -84,6 +84,6 @@ functionality:
         let oldBg = css(link).backgroundColor;
 
         hover(link, function () {
-          if (css(link).backgroundColor == oldBg) fail('The background colour of the third button doesn’t change when hovered')
+          if (css(link).backgroundColor == oldBg) return fail('The background colour of the third button doesn’t change when hovered')
           pass();
         });

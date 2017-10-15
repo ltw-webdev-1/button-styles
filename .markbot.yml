@@ -1,19 +1,16 @@
 repo: "button-styles"
 canvasCourse: "web-dev-1"
 
-naming: true
-restrictFileTypes: true
-liveWebsite: true
-
-git:
-  numCommits: 3
-  allCommitted: true
-  allSynced: true
+inherit:
+  - naming-restrict-live
+  - git-2
+  - html
+  - css
+  - box-sizing
 
 html:
   - path: "index.html"
-    valid: true
-    bestPractices: true
+    outline: false
     has:
       - "a.btn"
     search:
@@ -26,11 +23,7 @@ html:
 
 css:
   - path: "css/main.css"
-    valid: true
-    bestPractices: true
     has:
-      - ['html', 'box-sizing', 'border-box']
-      - ['*', 'box-sizing', 'inherit']
       - ['.btn', 'display', 'inline-block']
       - ['.btn:hover']
       - ['.btn-small', 'font-size']
@@ -72,7 +65,7 @@ functionality:
         let link = $('div:first-child a');
         let oldBg = css(link).backgroundColor;
 
-        hover('div:first-child a', function () {
+        hover(link, function () {
           if (css(link).backgroundColor == oldBg) fail('The background colour of the first button doesn’t change when hovered')
           pass();
         });
@@ -81,7 +74,7 @@ functionality:
         let link = $('div:nth-child(2) a');
         let oldBg = css(link).backgroundColor;
 
-        hover('div:nth-child(2) a', function () {
+        hover(link, function () {
           if (css(link).backgroundColor == oldBg) fail('The background colour of the second button doesn’t change when hovered')
           pass();
         });
@@ -90,7 +83,7 @@ functionality:
         let link = $('div:nth-child(3) a');
         let oldBg = css(link).backgroundColor;
 
-        hover('div:nth-child(3) a', function () {
+        hover(link, function () {
           if (css(link).backgroundColor == oldBg) fail('The background colour of the third button doesn’t change when hovered')
           pass();
         });

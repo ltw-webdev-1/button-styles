@@ -35,6 +35,8 @@ css:
       - ['.btn-warning']
       - ['.btn-warning:hover']
     has_not:
+      - check: 'a'
+        message: 'The `<a>` tag should not be targeted directly because we don’t want to affect *every single link* — the `.btn` class should have all the styles necessary for a button'
       - ['.btn-small', ['padding', 'display', 'background-color', 'border-radius', 'border', 'color', 'text-decoration']]
       - ['.btn-big', ['padding', 'display', 'background-color', 'border-radius', 'border', 'color', 'text-decoration']]
       - ['.btn-subtle', ['padding', 'display', 'border-radius', 'border', 'text-decoration', 'font-size']]

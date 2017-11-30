@@ -1,5 +1,5 @@
-repo: "button-styles"
-canvasCourse: "web-dev-1"
+repo: 'button-styles'
+canvasCourse: 'web-dev-1'
 
 inherit:
   - naming-restrict-live
@@ -9,20 +9,25 @@ inherit:
   - box-sizing
 
 html:
-  - path: "index.html"
+  - path: 'index.html'
     outline: false
     has:
-      - "a.btn"
+      - 'a.btn'
+      - check: 'a[class*=" "]'
+        message: 'Use multiple classes on the buttons to style them slightly differently from the default button look'
+    hasNot:
+      - check: 'div[class]'
+        message: 'Don’t make any changes to the `<div>`, it’s really just to make each button on a line—not for any styling purposes'
     search:
-      - "Primary button"
-      - "Subtle button"
-      - "Ghost button"
-      - "Warning button"
-      - "button small"
-      - "button big"
+      - 'Primary button'
+      - 'Subtle button'
+      - 'Ghost button'
+      - 'Warning button'
+      - 'button small'
+      - 'button big'
 
 css:
-  - path: "css/main.css"
+  - path: 'css/main.css'
     has:
       - ['.btn', 'display', 'inline-block']
       - ['.btn:hover']
@@ -34,6 +39,7 @@ css:
       - ['.btn-ghost:hover']
       - ['.btn-warning']
       - ['.btn-warning:hover']
+      - ['div', ['padding', 'text-align']]
     has_not:
       - check: 'a'
         message: 'The `<a>` tag should not be targeted directly because we don’t want to affect *every single link* — the `.btn` class should have all the styles necessary for a button'
@@ -42,6 +48,8 @@ css:
       - ['.btn-subtle', ['padding', 'display', 'border-radius', 'border', 'text-decoration', 'font-size']]
       - ['.btn-ghost', ['padding', 'display', 'border-radius', 'border', 'text-decoration', 'font-size']]
       - ['.btn-warning', ['padding', 'display', 'border-radius', 'border', 'text-decoration', 'font-size']]
+      - check: ['div', ['display', 'border', 'border-color', 'border-radius', 'font-size', 'border-width', 'border-style', 'color', 'background-color']]
+        message: 'Don’t make any changes to the `<div>` in the CSS, it should have `padding` & `text-align` only'
     search_not:
       - '\.btn-subtle-small'
       - '\.btn-small-subtle'
@@ -57,7 +65,7 @@ css:
       - '\.btn-warning-big'
 
 screenshots:
-  - path: "index.html"
+  - path: 'index.html'
     sizes: [400]
 
 functionality:
